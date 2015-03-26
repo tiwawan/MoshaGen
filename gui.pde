@@ -191,6 +191,7 @@ void gui() {
                    .setRange(1.0, 20000.0)
                    .setValue(3564.0)
                    .updateDisplayMode(1)
+                   .setDirection(Controller.HORIZONTAL)
                    .moveTo(g_canvas)
                    ;
                    
@@ -200,6 +201,7 @@ void gui() {
                     .setSize(100, 20)
                     .setRange(1.0, 20000.0)
                     .setValue(2520.0)
+                    .setDirection(Controller.HORIZONTAL)
                     .moveTo(g_canvas)
                     ;
                     
@@ -262,6 +264,7 @@ void gui() {
                    .setSize(50, 20)
                    .setRange(1,1000)
                    .setValue(50)
+                   .setDirection(Controller.HORIZONTAL)
                    .moveTo(g_arrange)
                    ;
   space_nbox = cp5.addNumberbox("Space")
@@ -269,6 +272,7 @@ void gui() {
                    .setSize(60, 20)
                    .setRange(1,1000)
                    .setValue(100)
+                   .setDirection(Controller.HORIZONTAL)
                    .moveTo(g_arrange)
                    ;
   centering_cbox = cp5.addCheckBox("Center")
@@ -435,8 +439,9 @@ void gui() {
                      .setLabel("Contrast")
                      .setPosition(10, 10)
                      .setWidth(60)
-                     .setRange(-128, 128)
+                     .setRange(-127, 127)
                      .setValue(0)
+                     .setDirection(Controller.HORIZONTAL)
                      .moveTo(g_filter)
                      ;
   brightness_nbox = cp5.addNumberbox("Brightness")
@@ -445,6 +450,7 @@ void gui() {
                      .setWidth(60)
                      .setRange(-255, 255)
                      .setValue(0)
+                     .setDirection(Controller.HORIZONTAL)
                      .moveTo(g_filter)
                      ;
   gray_cbox = cp5.addCheckBox("Gray")
@@ -455,11 +461,19 @@ void gui() {
                  ;
   cp5.addButton("Apply Filter")
      .setLabel("Apply")
-     .setPosition(100, 60)
+     .setPosition(50, 60)
      .moveTo(g_filter)
      .setColor(gcolor)
      .getCaptionLabel().align(CENTER, CENTER)
      ;
+  cp5.addButton("Reset Filter")
+     .setLabel("Reset")
+     .setPosition(150, 60)
+     .moveTo(g_filter)
+     .setColor(gcolor)
+     .getCaptionLabel().align(CENTER, CENTER)
+     ;
+
 
                    
   
@@ -527,6 +541,12 @@ void controlEvent(ControlEvent theEvent) {
       il.autoTrim();
     }
     else if(theEvent.controller().name()=="Apply Filter") {
+      il.filterImage();
+    }
+    else if(theEvent.controller().name()=="Reset Filter") {
+      contrast_nbox.setValue(0.0);
+      brightness_nbox.setValue(0.0);
+      gray_cbox.deactivate(0);
       il.filterImage();
     }
     else {
