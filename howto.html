@@ -7,82 +7,82 @@
     <link rel="stylesheet" type="text/css" href="stylecheets/howto.css">
   </head>
   <body>
-    <h1>MoshaGen�̎g�����i�ڍׁj</h1>
-    <h2>FILE INPUT/OUTPUT�p�l��</h2>
+    <h1>MoshaGenの使い方（詳細）</h1>
+    <h2>FILE INPUT/OUTPUTパネル</h2>
     <img src="img/fileio.jpg">
     <h3>OPEN FILE</h3>
-      �͎ʂ������摜�t�@�C�����J���܂��B
+      模写したい画像ファイルを開きます。
     <h3>OPEN DIRECTORY</h3>
-      �f�B���N�g�����̑S�Ẳ摜�t�@�C����ǂݍ��݂܂��B
+      ディレクトリ内の全ての画像ファイルを読み込みます。
     <h3>CLOSE FILE</h3>
-      �摜�t�@�C������܂��B
+      画像ファイルを閉じます。
     <h3>OUTPUT DIRECTORY</h3>
-      ��������t�@�C���̒u���ꏊ���w�肵�܂��B�w�肵�Ȃ��ꍇ�A�ǂݍ��񂾂̂Ɠ����ꏊ�ɐ������܂��B
+      生成するファイルの置き場所を指定します。指定しない場合、読み込んだのと同じ場所に生成します。
     <h3>MODEL,SHEET,CHECK</h3>
-      MODEL(����{)�ASHEET(���[�N�V�[�g)�ACHECK�i�������킹�V�[�g�j���A�`�F�b�N������Ɛ������A�͂����Ɛ������Ȃ��Ȃ�܂��B
+      MODEL(お手本)、SHEET(ワークシート)、CHECK（答え合わせシート）を、チェックをつけると生成し、はずすと生成しなくなります。
     <h3>GENERATE</h3>
-      ����{�E���[�N�V�[�g�E�������킹�V�[�g�𐶐����܂��B
+      お手本・ワークシート・答え合わせシートを生成します。
     <h3>GENERATE ALL</h3>
-      �J����Ă���S�Ẵt�@�C���ɂ��āA����{�E���[�N�V�[�g�E�������킹�V�[�g�𐶐����܂��B
-    <h2>CANVAS SETTING�p�l��</h2>
+      開かれている全てのファイルについて、お手本・ワークシート・答え合わせシートを生成します。
+    <h2>CANVAS SETTINGパネル</h2>
     <img src="img/canvas.jpg">
     <h3>WIDTH(PX), HEIGHT(PX)</h3>
-      ��������摜�̃T�C�Y���s�N�Z���Ŏw�肵�܂��BPRESETS�������̃T�C�Y��I�Ԃ��Ƃ��ł��܂��B
+      生成する画像のサイズをピクセルで指定します。PRESETSから既定のサイズを選ぶこともできます。
     <h3>SWAP</h3>
-      �摜�T�C�Y�̏c�Ɖ������ւ��܂��B
+      画像サイズの縦と横を入れ替えます。
     <h3>SEPARATE SHEET</h3>
-      �`�F�b�N������Ƃ���{�ƃ��[�N�V�[�g���ʂɂȂ�A�͂����ƈ�̃t�@�C���̒��ɂ���{�ƃ��[�N�V�[�g������܂��B
-    <h2>ARRANGEMENT�p�l��</h2>
+      チェックをつけるとお手本とワークシートが別になり、はずすと一つのファイルの中にお手本とワークシートが入ります。
+    <h2>ARRANGEMENTパネル</h2>
     <img src="img/arrangement.jpg">
     <h3>SCALE</h3>
-      ����{�ɑ΂��郏�[�N�V�[�g�E�������킹�V�[�g�̔{���ł��B1�ɂ���Ɠ����T�C�Y�Ŗ͎ʂł��܂��B1���傫������Ɗg�債�Ė͎ʂ��邱�ƂɂȂ�܂��B 
+      お手本に対するワークシート・答え合わせシートの倍率です。1にすると同じサイズで模写できます。1より大きくすると拡大して模写することになります。 
     <h3>CENTERING</h3>
-      �`�F�b�N����Ɨp���̐^�񒆂ɉ摜���z�u����܂��B
-    <h3>LEFT TO RIGHT, UP TO DOWN(SEPARATE SHEET�`�F�b�N���̂�)</h3>
-      ����{�ƃ��[�N�V�[�g�����E�ɔz�u���邩�A�㉺�ɔz�u���邩��ݒ�ł��܂��B
+      チェックすると用紙の真ん中に画像が配置されます。
+    <h3>LEFT TO RIGHT, UP TO DOWN(SEPARATE SHEETチェック時のみ)</h3>
+      お手本とワークシートを左右に配置するか、上下に配置するかを設定できます。
     <h3>MARGIN</h3>
-      �摜�̎���̗]���ł��B
-    <h3>SPACE(SEPARATE SHEET�`�F�b�N���̂�)</h3>
-      ����{�ƃ��[�N�V�[�g�̊Ԃ̊Ԋu�ł��B
-    <h2>FRAME�p�l��</h2>
+      画像の周りの余白です。
+    <h3>SPACE(SEPARATE SHEETチェック時のみ)</h3>
+      お手本とワークシートの間の間隔です。
+    <h2>FRAMEパネル</h2>
     <img src="img/frame.jpg">
     <h3>THICKNESS</h3>
-      �g�̑����ł��B
+      枠の太さです。
     <h3>HORIZONTAL, VERTICAL</h3>
-      �����E���������̘g���A�`�F�b�N����ƕt���A�`�F�b�N���͂����ƕt���Ȃ��Ȃ�܂��B
+      水平・垂直方向の枠が、チェックすると付き、チェックをはずすと付かなくなります。
     <h3>EXTEND</h3>
-      �g��[�܂ŐL�΂��܂��BHORIZONTAL,VERTICAL�̈���݂̂��`�F�b�N���AEXTEND�Ƀ`�F�b�N������ƁA�����E���邢�͐��������̊g�嗦�݂̂𗊂�ɖ͎ʂ��邱�Ƃ��ł��܂��B
-    <h2>GRID�p�l��</h2>
+      枠を端まで伸ばします。HORIZONTAL,VERTICALの一方のみをチェックし、EXTENDにチェックを入れると、水平・あるいは垂直方向の拡大率のみを頼りに模写することができます。
+    <h2>GRIDパネル</h2>
     <img src="img/grid.jpg">
     <h3>SQUARE, SIZE</h3>
-      SQUARE�Ƀ`�F�b�N������Ɛ����`�̃O���b�h�ɂȂ�܂��BSIZE�ň�ӂ̑傫�����w��ł��܂��B
-    <h3>HORIZONTAL, VERTICAL(SQUARE�Ƀ`�F�b�N���Ă��Ȃ��Ƃ��̂�)</h3>
-      �����E���������ɓ����O���b�h���̖{���ł��B
+      SQUAREにチェックを入れると正方形のグリッドになります。SIZEで一辺の大きさを指定できます。
+    <h3>HORIZONTAL, VERTICAL(SQUAREにチェックしていないときのみ)</h3>
+      水平・垂直方向に入れるグリッド線の本数です。
     <h3>THICKNESS</h3>
-      �O���b�h���̑����ł��B
-    <h2>COLOR�p�l��</h2>
+      グリッド線の太さです。
+    <h2>COLORパネル</h2>
     <img src="img/color.jpg">
-      �v���_�E�����j���[����FRAME�i�g�j, GRID�i�O���b�h�j, BACKGROUND�i�w�i�j��I�сARGBA�ŐF��ݒ肵�Ă��������B
-    <h2>TRIMMING�p�l��</h2>
+      プルダウンメニューかだFRAME（枠）, GRID（グリッド）, BACKGROUND（背景）を選び、RGBAで色を設定してください。
+    <h2>TRIMMINGパネル</h2>
     <img src="img/trimming.jpg">
     <h3>UP, DOWN, LEFT, RIGHT</h3>
-      �㉺���E���g���~���O����ʂ��s�N�Z���Ŏw�肵�܂��B
+      上下左右をトリミングする量をピクセルで指定します。
     <h3>RESET</h3>
-      UP, DOWN, LEFT, RIGHT�����Z�b�g���A�g���~���O���Ȃ���Ԃɂ��܂��B
+      UP, DOWN, LEFT, RIGHTをリセットし、トリミングしない状態にします。
     <h3>AUTO</h3>
-      �����Ńg���~���O���܂��B
-    <h2>FILTER�p�l��</h2>
+      自動でトリミングします。
+    <h2>FILTERパネル</h2>
     <img src="img/filter.jpg">
-      �y���Ӂz���̍��ڂ�APPLY�������܂Ŕ��f����܂���B
+      【注意】この項目はAPPLYを押すまで反映されません。
     <h3>CONTRAST</h3>
-      �R���g���X�g�𒲐����܂��B
+      コントラストを調整します。
     <h3>BRIGHTNESS</h3>
-      ���邳�𒲐����܂��B
+      明るさを調整します。
     <h3>GRAYSCALE</h3>
-      �`�F�b�N����ƃO���[�X�P�[���ɂȂ�܂��B
+      チェックするとグレースケールになります。
     <h3>APPLY</h3>
-      ��L��K�p���܂��B
+      上記を適用します。
     <h3>RESET</h3>
-      ���ʂ����Z�b�g���܂��B
+      効果をリセットします。
   </body>
 </html>
