@@ -1,6 +1,6 @@
 # MoshaGen
 ---
-“ú–{Œêƒy[ƒW‚Í‚±‚¿‚ç
+æ—¥æœ¬èªãƒšãƒ¼ã‚¸ã¯ã“ã¡ã‚‰
 http://tiwawan.github.io/MoshaGen/
 ---
 Artists, especially manga and anime artists, often reproduce pictures for exercise. MoshaGen helps artists reproduce pictures.
