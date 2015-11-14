@@ -128,7 +128,7 @@ public void folderSelected_load(File selection) {
 }
 
 public void dispose() {
-  cp5.saveProperties("setting");
+  cp5.saveProperties("setting.ser");
 }
 
 

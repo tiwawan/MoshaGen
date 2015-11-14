@@ -109,7 +109,7 @@ void folderSelected_load(File selection) {
 }
 
 void dispose() {
-  cp5.saveProperties("setting");
+  cp5.saveProperties("setting.ser");
 }
 
 
