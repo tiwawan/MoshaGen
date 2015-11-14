@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>How to use MoshaGen
+    </title>
+    <link rel="stylesheet" type="text/css" href="stylecheets/howto.css">
+  </head>
+  <body>
+    <h1>MoshaGenの使い方（詳細）</h1>
+    <h2>FILE INPUT/OUTPUTパネル</h2>
+    <img src="img/fileio.jpg">
+    <h3>OPEN FILE</h3>
+      模写したい画像ファイルを開きます。
+    <h3>OPEN DIRECTORY</h3>
+      ディレクトリ内の全ての画像ファイルを読み込みます。
+    <h3>CLOSE FILE</h3>
+      画像ファイルを閉じます。
+    <h3>OUTPUT DIRECTORY</h3>
+      生成するファイルの置き場所を指定します。指定しない場合、読み込んだのと同じ場所に生成します。
+    <h3>MODEL,SHEET,CHECK</h3>
+      MODEL(お手本)、SHEET(ワークシート)、CHECK（答え合わせシート）を、チェックをつけると生成し、はずすと生成しなくなります。
+    <h3>GENERATE</h3>
+      お手本・ワークシート・答え合わせシートを生成します。
+    <h3>GENERATE ALL</h3>
+      開かれている全てのファイルについて、お手本・ワークシート・答え合わせシートを生成します。
+    <h2>CANVAS SETTINGパネル</h2>
+    <img src="img/canvas.jpg">
+    <h3>WIDTH(PX), HEIGHT(PX)</h3>
+      生成する画像のサイズをピクセルで指定します。PRESETSから既定のサイズを選ぶこともできます。
+    <h3>SWAP</h3>
+      画像サイズの縦と横を入れ替えます。
+    <h3>SEPARATE SHEET</h3>
+      チェックをつけるとお手本とワークシートが別になり、はずすと一つのファイルの中にお手本とワークシートが入ります。
+    <h2>ARRANGEMENTパネル</h2>
+    <img src="img/arrangement.jpg">
+    <h3>SCALE</h3>
+      お手本に対するワークシート・答え合わせシートの倍率です。1にすると同じサイズで模写できます。1より大きくすると拡大して模写することになります。 
+    <h3>CENTERING</h3>
+      チェックすると用紙の真ん中に画像が配置されます。
+    <h3>LEFT TO RIGHT, UP TO DOWN(SEPARATE SHEETチェック時のみ)</h3>
+      お手本とワークシートを左右に配置するか、上下に配置するかを設定できます。
+    <h3>MARGIN</h3>
+      画像の周りの余白です。
+    <h3>SPACE(SEPARATE SHEETチェック時のみ)</h3>
+      お手本とワークシートの間の間隔です。
+    <h2>FRAMEパネル</h2>
+    <img src="img/frame.jpg">
+    <h3>THICKNESS</h3>
+      枠の太さです。
+    <h3>HORIZONTAL, VERTICAL</h3>
+      水平・垂直方向の枠が、チェックすると付き、チェックをはずすと付かなくなります。
+    <h3>EXTEND</h3>
+      枠を端まで伸ばします。HORIZONTAL,VERTICALの一方のみをチェックし、EXTENDにチェックを入れると、水平・あるいは垂直方向の拡大率のみを頼りに模写することができます。
+    <h2>GRIDパネル</h2>
+    <img src="img/grid.jpg">
+    <h3>SQUARE, SIZE</h3>
+      SQUAREにチェックを入れると正方形のグリッドになります。SIZEで一辺の大きさを指定できます。
+    <h3>HORIZONTAL, VERTICAL(SQUAREにチェックしていないときのみ)</h3>
+      水平・垂直方向に入れるグリッド線の本数です。
+    <h3>THICKNESS</h3>
+      グリッド線の太さです。
+    <h2>COLORパネル</h2>
+    <img src="img/color.jpg">
+      プルダウンメニューかだFRAME（枠）, GRID（グリッド）, BACKGROUND（背景）を選び、RGBAで色を設定してください。
+    <h2>TRIMMINGパネル</h2>
+    <img src="img/trimming.jpg">
+    <h3>UP, DOWN, LEFT, RIGHT</h3>
+      上下左右をトリミングする量をピクセルで指定します。
+    <h3>RESET</h3>
+      UP, DOWN, LEFT, RIGHTをリセットし、トリミングしない状態にします。
+    <h3>AUTO</h3>
+      自動でトリミングします。
+    <h2>FILTERパネル</h2>
+    <img src="img/filter.jpg">
+      【注意】この項目はAPPLYを押すまで反映されません。
+    <h3>CONTRAST</h3>
+      コントラストを調整します。
+    <h3>BRIGHTNESS</h3>
+      明るさを調整します。
+    <h3>GRAYSCALE</h3>
+      チェックするとグレースケールになります。
+    <h3>APPLY</h3>
+      上記を適用します。
+    <h3>RESET</h3>
+      効果をリセットします。
+  </body>
+</html>
